@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Islas de Totora</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="imagenes/lago-titicaca.png" alt="Barco de Totora" class="barcoLogo">
+                <img src="imagenes/ISLAS DE TOTORA.png" alt="" class="tituloLogo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#">Modelos</a>
+                        <ul class="submenu">
+                            <li><a href="barcos.html">Barcos</a></li>
+                            <li><a href="casas.html">Casas</a></li>
+                            <li><a href="totora.html">Totora</a></li>
+                            <li><a href="pez.html">Pez de Totora</a></li>
+                            <li><a href="flamenco.html">Flamenco de Totora</a></li>
+                            <li><a href="arco.html">El Arco</a></li>
+                            <li><a href="mirador.html">Mirador</a></li>
+                            <li><a href="peces.html">Peces</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="ubicacion.html">Ubicacion</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="info2 panel-flotante" id="inicioInfo">
+            <h1>ISLAS DE TOTORA</h1>
+            <p>Navega entre islas flotantes y descubre cómo un pueblo aprendió a vivir sobre el agua</p>
+            <button class="boton_explorar"onclick="mostrarCultura()">Haz clic para explorar</button>
+        </div>
+
+        <div class="info panel-flotante" id="panelInfo" style="display:none;">
+            <h1 id="tituloInfo"></h1>
+            <img id="imagenInfo" src="" alt="" class="imagenInfo">
+            <p id="textoInfo"></p>
+            <p class="fuenteInfo" id="fuenteInfo"></p>
+        </div>
+        <div class="botonesInfo" id="botonesInfo" style="display:none;">
+            <button class="boton_explorar" onclick="anteriorInfo()">Atrás</button>
+            <button id="btnSiguiente" class="boton_explorar" onclick="siguienteInfo()">Continuar</button>
+        </div>
+        
+        <div class="botonesAmbiente">
+            <button class="boton_explorar" onclick="cambiarAmbiente('dia')">☀️ Día</button>
+            <button class="boton_explorar" onclick="cambiarAmbiente('atardecer')">🌅 Atardecer</button>
+            <button class="boton_explorar" onclick="cambiarAmbiente('noche')">🌙 Noche</button>
+            <button class="boton_explorar" onclick="cambiarAmbiente('nublado')">☁️ Nublado</button>
+        </div>
+
+        <div id="pantallaCarga">
+            <div class="spinnerCarga"></div>
+            <h2>ISLAS DE TOTORA</h2>
+            <p id="porcentajeCarga">Cargando... 0%</p>
+        </div>
+
+        <div id="contenedor3D"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/objects/Water.js"></script>
+        <script src="ambiente.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Viviendas de Totora</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="imagenes/lago-titicaca.png" alt="Barco de Totora" class="barcoLogo">
+                <img src="imagenes/ISLAS DE TOTORA.png" alt="" class="tituloLogo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#">Modelos</a>
+                        <ul class="submenu">
+                            <li><a href="barcos.html">Barcos</a></li>
+                            <li><a href="casas.html">Casas</a></li>
+                            <li><a href="totora.html">Totora</a></li>
+                            <li><a href="pez.html">Pez de Totora</a></li>
+                            <li><a href="flamenco.html" class="active">Flamenco de Totora</a></li>
+                            <li><a href="arco.html">El Arco</a></li>
+                            <li><a href="mirador.html">Mirador</a></li>
+                            <li><a href="peces.html">Peces</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="ubicacion.html">Ubicacion</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="contenedor3D"></div>
+        <div class="ayudaGiro">Arrastra para girar el modelo</div>
+        <div class="infoModelo panel-flotante">
+            <h1>Flamenco Andino de Totora</h1>
+            <img src="imagenes/flamenco.jpg" alt="Flamenco de totora" class="imagenInfo">
+            <p>
+                El flamenco andino de totora es una figura artesanal 
+                inspirada en el flamenco que habita en las regiones del altiplano. 
+                Elaborado con totora, representa la creatividad de las comunidades 
+                andinas y el aprovechamiento de los recursos naturales de su entorno.
+                Este modelo busca destacar la belleza de la fauna andina y la importancia
+                de la totora como parte de la cultura y las tradiciones de la región.
+            </p>
+            
+        </div>
+        <div class="botonesAmbiente">
+            <button class="boton_explorar" onclick="cambiarAmbiente('dia')">☀️ Día</button>
+            <button class="boton_explorar" onclick="cambiarAmbiente('atardecer')">🌅 Atardecer</button>
+            <button class="boton_explorar" onclick="cambiarAmbiente('noche')">🌙 Noche</button>
+            <button class="boton_explorar" onclick="cambiarAmbiente('nublado')">☁️ Nublado</button>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/objects/Water.js"></script>
+        <script src="ambiente.js"></script>
+        <script src="comun.js"></script>
+        <script src="flamenco.js"></script>
+    </body>
+</html>

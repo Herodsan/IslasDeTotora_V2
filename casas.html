@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Viviendas de Totora</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="imagenes/lago-titicaca.png" alt="Barco de Totora" class="barcoLogo">
+                <img src="imagenes/ISLAS DE TOTORA.png" alt="" class="tituloLogo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#">Modelos</a>
+                        <ul class="submenu">
+                            <li><a href="barcos.html">Barcos</a></li>
+                            <li><a href="casas.html" class="active">Casas</a></li>
+                            <li><a href="totora.html">Totora</a></li>
+                            <li><a href="pez.html">Pez de Totora</a></li>
+                            <li><a href="flamenco.html">Flamenco de Totora</a></li>
+                            <li><a href="arco.html">El Arco</a></li>
+                            <li><a href="mirador.html">Mirador</a></li>
+                            <li><a href="peces.html">Peces</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="ubicacion.html">Ubicacion</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="contenedor3D"></div>
+        <div class="ayudaGiro">Arrastra para girar el modelo</div>
+        <div class="infoModelo panel-flotante">
+            <h1>Casas de Totora</h1>
+            <img src="imagenes/casa.jpg" alt="Casa de totora" class="imagenInfo">
+
+            <p>
+                Las casas del pueblo Uru son elaboradas con totora, 
+                aprovechando las propiedades de este material natural 
+                por ser ligero y resistente. Estas viviendas se construyen 
+                sobre las islas flotantes y ofrecen protección frente al clima
+                del altiplano. Su elaboración mantiene técnicas tradicionales 
+                que han sido conservadas por generaciones como parte de su cultura
+            </p>
+            
+        </div>
+        <div class="botonesAmbiente">
+            <button class="boton_explorar" onclick="cambiarAmbiente('dia')">☀️ Día</button>
+            <button class="boton_explorar" onclick="cambiarAmbiente('atardecer')">🌅 Atardecer</button>
+            <button class="boton_explorar" onclick="cambiarAmbiente('noche')">🌙 Noche</button>
+            <button class="boton_explorar" onclick="cambiarAmbiente('nublado')">☁️ Nublado</button>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/objects/Water.js"></script>
+        <script src="ambiente.js"></script>
+        <script src="comun.js"></script>
+        <script src="casas.js"></script>
+    </body>
+</html>

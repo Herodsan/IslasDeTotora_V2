@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cultura de los Urus</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="imagenes/lago-titicaca.png" alt="Barco de Totora" class="barcoLogo">
+                <img src="imagenes/ISLAS DE TOTORA.png" alt="" class="tituloLogo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#">Modelos</a>
+                        <ul class="submenu">
+                            <li><a href="barcos.html" class="active">Barcos</a></li>
+                            <li><a href="casas.html">Casas</a></li>
+                            <li><a href="totora.html">Totora</a></li>
+                            <li><a href="pez.html">Pez de Totora</a></li>
+                            <li><a href="flamenco.html">Flamenco de Totora</a></li>
+                            <li><a href="arco.html">El Arco</a></li>
+                            <li><a href="mirador.html">Mirador</a></li>
+                            <li><a href="peces.html">Peces</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="ubicacion.html">Ubicacion</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="contenedor3D"></div>
+        <div class="ayudaGiro">Arrastra para girar el modelo</div>
+        <div class="infoModelo panel-flotante">
+            <h1>Barcos de Totora</h1>
+            <img src="imagenes/barcoDoble.jpeg" alt="Barco de totora" class="imagenInfo">
+            <p>
+                Las embarcaciones de totora son uno de los símbolos más
+                representativos de la cultura Uru. Construidas completamente
+                con fibras vegetales del Lago Titicaca, han sido utilizadas
+                durante siglos para la pesca, el transporte y la comunicación
+                entre las islas flotantes.
+            </p>
+            <p>
+                Gracias a la ligereza y resistencia de la totora, estos barcos
+                pueden navegar fácilmente sobre las aguas del lago. Su diseño
+                tradicional continúa transmitiéndose de generación en generación.
+            </p>
+        </div>
+        <div class="botonesAmbiente">
+            <button class="boton_explorar" onclick="cambiarAmbiente('dia')">☀️ Día</button>
+            <button class="boton_explorar" onclick="cambiarAmbiente('atardecer')">🌅 Atardecer</button>
+            <button class="boton_explorar" onclick="cambiarAmbiente('noche')">🌙 Noche</button>
+            <button class="boton_explorar" onclick="cambiarAmbiente('nublado')">☁️ Nublado</button>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/objects/Water.js"></script>
+        <script src="ambiente.js"></script>
+        <script src="comun.js"></script>
+        <script src="barco.js"></script>
+
+    </body>
+</html>

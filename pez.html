@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Viviendas de Totora</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="imagenes/lago-titicaca.png" alt="Barco de Totora" class="barcoLogo">
+                <img src="imagenes/ISLAS DE TOTORA.png" alt="" class="tituloLogo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#">Modelos</a>
+                        <ul class="submenu">
+                            <li><a href="barcos.html">Barcos</a></li>
+                            <li><a href="casas.html">Casas</a></li>
+                            <li><a href="totora.html">Totora</a></li>
+                            <li><a href="pez.html" class="active">Pez de Totora</a></li>
+                            <li><a href="flamenco.html">Flamenco de Totora</a></li>
+                            <li><a href="arco.html">El Arco</a></li>
+                            <li><a href="mirador.html">Mirador</a></li>
+                            <li><a href="peces.html">Peces</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="ubicacion.html">Ubicacion</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="contenedor3D"></div>
+        <div class="ayudaGiro">Arrastra para girar el modelo</div>
+        <div class="infoModelo panel-flotante">
+            <h1>Pez de Totora</h1>
+            <img src="imagenes/pez2.jpg" alt="Pez de totora" class="imagenInfo">
+            <p>
+                El pez de totora es una figura artesanal elaborada con totora, 
+                una planta característica de las zonas cercanas al lago Titicaca. 
+                Representa la creatividad de las comunidades andinas y el uso tradicional 
+                de este recurso natural para crear diferentes objetos y artesanías.
+                Este modelo busca mostrar la importancia de la totora como parte de la 
+                cultura y las tradiciones de la región.            
+            </p>
+        </div>
+        <div class="botonesAmbiente">
+            <button class="boton_explorar" onclick="cambiarAmbiente('dia')">☀️ Día</button>
+            <button class="boton_explorar" onclick="cambiarAmbiente('atardecer')">🌅 Atardecer</button>
+            <button class="boton_explorar" onclick="cambiarAmbiente('noche')">🌙 Noche</button>
+            <button class="boton_explorar" onclick="cambiarAmbiente('nublado')">☁️ Nublado</button>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/objects/Water.js"></script>
+        <script src="ambiente.js"></script>
+        <script src="comun.js"></script>
+        <script src="pez.js"></script>
+    </body>
+</html>
