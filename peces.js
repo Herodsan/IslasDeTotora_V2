@@ -78,7 +78,7 @@ function init(){
 
   renderer.domElement.style.touchAction = "none";
 
-    const luzAmbiental = new THREE.AmbientLight(0xffffff, 0.7);
+    const luzAmbiental = new THREE.AmbientLight(0xffffff, 3);
     scene.add(luzAmbiental);
 
     luzDir2 = new THREE.DirectionalLight(0xffffff, 0.8); 
